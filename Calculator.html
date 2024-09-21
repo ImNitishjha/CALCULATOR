@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCal.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cal">
+        <input type="text"  id="display" readonly>
+        <div class="button-container">
+            <button class="button" onclick="
+            currDis = ''; 
+            document.querySelector('#display').value = currDis; 
+            ">C</button>
+            <button class="button" onclick="
+            currDis = currDis + '1'; 
+            document.querySelector('#display').value = currDis; 
+            " >1</button>
+            <button class="button" onclick="
+            currDis = currDis + '2'; 
+            document.querySelector('#display').value = currDis; 
+            ">2</button>
+            <button class="button" onclick="
+            currDis = currDis + '+'; 
+            document.querySelector('#display').value = currDis; 
+            ">+</button>
+            <button class="button" onclick="
+            currDis = currDis + '3'; 
+            document.querySelector('#display').value = currDis; 
+            ">3</button>
+            <button class="button" onclick="
+            currDis = currDis + '4'; 
+            document.querySelector('#display').value = currDis; 
+            ">4</button>
+            <button class="button" onclick="
+            currDis = currDis + '-'; 
+            document.querySelector('#display').value = currDis; 
+            ">-</button>
+            <button class="button" onclick="
+            currDis = currDis + '5'; 
+            document.querySelector('#display').value = currDis; 
+            ">5</button>
+            <button class="button" onclick="
+            currDis = currDis + '6'; 
+            document.querySelector('#display').value = currDis; 
+            ">6</button>
+            <button class="button" onclick="
+            currDis = currDis + '*'; 
+            document.querySelector('#display').value = currDis; 
+            ">*</button>
+            <button class="button" onclick="
+            currDis = currDis + '7'; 
+            document.querySelector('#display').value = currDis; 
+            ">7</button>
+            <button class="button" onclick="
+            currDis = currDis + '8'; 
+            document.querySelector('#display').value = currDis; 
+            ">8</button>
+            <button class="button" onclick="
+            currDis = currDis + '/'; 
+            document.querySelector('#display').value = currDis; 
+            ">/</button>
+            <button class="button" onclick="
+            currDis = eval(currDis); 
+            document.querySelector('#display').value = currDis; 
+            ">=</button>
+            <button class="button" onclick="
+            currDis = currDis + '9'; 
+            document.querySelector('#display').value = currDis; 
+            ">9</button>
+            <button class="button" onclick="
+            currDis = currDis + '0'; 
+            document.querySelector('#display').value = currDis; 
+            ">0</button>
+            <button class="button" onclick="
+            currDis = currDis + '.'; 
+            document.querySelector('#display').value = currDis; 
+            ">.</button>
+
+        </div>
+    </div>
+    <script>
+        let currDis = '';
+        document.querySelector('#display').value = currDis; 
+    </script>
+</body>
+</html>
